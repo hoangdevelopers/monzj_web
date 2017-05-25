@@ -1,0 +1,96 @@
+<div class="screen_container">
+  <div class="container">
+
+
+    <header>
+      <div>
+        <img [src]="logo" width="8%">
+        <div>
+
+        </div>
+      </div>
+      <nav class="navbar navbar-default wrapper">
+        <div>
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+              aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse primary-menu">
+            <ul class="nav navbar-nav">
+              <li>
+                <a [routerLink]=" ['./'] " routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="a-nav">TRANG CHỦ</a>
+              </li>
+
+              <li>
+                <a [routerLink]=" ['/home'] " routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="a-nav">TÌM KIẾM<br/>MÓN NGON</a>
+              </li>
+              <li>
+                <a [routerLink]=" ['/detail'] " routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="a-nav">THÔNG TIN<br/>HỮU ÍCH</a>
+              </li>
+              <li>
+                <a [routerLink]=" ['/barrel'] " routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="a-nav">GIA VỊ BẠN CẦN</a>
+              </li>
+              <li>
+                <a [routerLink]=" ['/about'] " routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="a-nav">MONZJ & BẠN</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="row header-bar wrapper">
+        <div class="col-lg-3 col-md-3 wrapper">
+          <div class="login-header">
+            Đăng nhập
+          </div>
+          <div class="login-body">
+            <span>Facebook</span>
+            <br/>
+            <span>Google</span>
+          </div>
+        </div>
+        <div class="col-lg-9 col-md-9 wrapper">
+          <div class="search-box">
+            <div class="search-title">Ai cũng có thể nấu</div>
+            <div class="search-input-container">
+              <input class="search-input" value="" placeholder="NGUYÊN LIỆU - CÁCH NẤU - DỊP NẤU" autocomplete="off" type="text">
+              <button id="search-btn" type="submit">
+            <img class="img-responsive" src="/assets/button/home-search.png" alt="tim kiem mon an"></button></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <ng-content></ng-content>
+    </main>
+  </div>
+</div>
+<footer>
+  <div class="footer foot_bg">
+    <div class="container-fluid">
+      <div class="row">
+        <ul class="visible-md-block visible-lg-block">
+          <li id="menu-item-502"><a rel="nofollow" title="Về Món ngon mỗi ngày" href="http://monngonmoingay.com/danh-muc-gioi-thieu/ve-mon-ngon-moi-ngay/">Về MONZJ</a></li>
+          <li id="menu-item-81"><a rel="nofollow" href="http://monngonmoingay.com/lich-phat-song/">Lịch phát sóng</a></li>
+          <li id="menu-item-503"><a rel="nofollow" href="http://monngonmoingay.com/danh-muc-gioi-thieu/ve-ajinomoto/">Về Ajinomoto</a></li>
+          <li id="menu-item-83"><a rel="nofollow" href="http://monngonmoingay.com/lien-he/">Liên hệ</a></li>
+          <li id="menu-item-84"><a rel="nofollow" href="http://monngonmoingay.com/hoi-dap/">Hỏi đáp</a></li>
+          <li id="menu-item-85"><a rel="nofollow" href="http://monngonmoingay.com/dieu-khoan-su-dung/">Điều khoản sử dụng</a></li>
+        </ul>
+        <div class="foot_top visible-sm-block visible-xs-block"><img src="http://monngonmoingay.com/wp-content/themes/monngonmoingay/images/foot-smp.png" alt=""></div>
+        <p>Copyright©2012<span> - </span><br class="visible-sm-block visible-xs-block">Monzj.com <img src="http://monngonmoingay.com/wp-content/themes/monngonmoingay/images/foot-logo.png"
+            alt="ajinomoto"><span> . All rights reserved</span></p>
+        <ul class="foot_social row visible-sm-block visible-xs-block">
+          <li><a href="#"><img src="http://monngonmoingay.com/wp-content/themes/monngonmoingay/images/foot-smp-rss.png" alt="rss"></a></li>
+          <li><a href="#"><img src="http://monngonmoingay.com/wp-content/themes/monngonmoingay/images/foot-smp-twitter.png" alt="twitter"></a></li>
+          <li><a href="#"><img src="http://monngonmoingay.com/wp-content/themes/monngonmoingay/images/foot-smp-facebook.png" alt="facebook"></a></li>
+          <li><a href="#"><img src="http://monngonmoingay.com/wp-content/themes/monngonmoingay/images/foot-smp-flickr.png" alt="flickr"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

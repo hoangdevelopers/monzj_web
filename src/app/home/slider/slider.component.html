@@ -1,0 +1,39 @@
+<div id="myCarousel" class="carousel slide" data-interval="false">
+  <!-- Indicators -->
+
+  <div class="time-bar">
+    <h3>THỰC ĐƠN HÔM NAY</h3>
+    <div class="line">
+      <ol class="carousel-indicators carousel-indicators-numbers">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"><span>2</span></li>
+        <li data-target="#myCarousel" data-slide-to="1"><span>3</span></li>
+        <li data-target="#myCarousel" data-slide-to="2"><span>4</span></li>
+        <li data-target="#myCarousel" data-slide-to="3"><span>5</span></li>
+        <li data-target="#myCarousel" data-slide-to="4"><span>6</span></li>
+        <li data-target="#myCarousel" data-slide-to="5"><span>7</span></li>
+        <li data-target="#myCarousel" data-slide-to="6"><span>CN</span></li>
+      </ol>
+    </div>
+  </div>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div *ngFor="let recipe of recipes; let index = index" [class.active]="index == 0" class="item">
+      <h2>{{recipe.name}}</h2>
+      <img src="{{recipe.thumbnail}}" alt="{{recipe.name}}">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" data-slide="prev" href="#myCarousel">
+    <span class="prev" aria-hidden="true">
+            <img src="/assets/button/btn-prev.png" alt="prev">
+    </span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" data-slide="next" href="#myCarousel">
+    <span class="next" aria-hidden="true">
+            <img src="/assets/button/btn-next.png" alt="next">
+    </span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>

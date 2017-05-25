@@ -1,0 +1,18 @@
+<div class="menus">
+<div *ngFor="let menu of menus" class="menu {{menu.background}}">
+  <div class="row wrapper">
+    <div class="col-md-3 wrapper">
+      <h2 class="menu-title">{{menu.name}}</h2>
+      <img src="{{menu.thumbnail}}" class="menu-thumbnail"/>
+    </div>
+    <div class="col-md-9 wrapper">
+      <div *ngFor="let submenu of menu.submenus" class="submenu">
+        <div class="submenu-title">{{submenu.name}}</div>
+        <div *ngFor="let element of submenu.elements"  class="element">{{element.name}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="food_shadow">&nbsp;</div>
+</div>
+
+</div>

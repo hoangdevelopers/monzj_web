@@ -1,0 +1,66 @@
+.menus{
+    background-color: #fff5cc;
+    padding: 20px 30px;
+    .menu{
+        margin-bottom: 20px;
+        font-family: 'Open Sans',sans-serif;
+        .menu-title{
+            color: red;
+            font-size: 20px;
+            text-align: center;
+            padding: 7px 0 4px;
+            margin: 0;
+            background-color: #fff;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .menu-thumbnail{
+            width: 100%;
+            height: 100%;
+        }
+        .submenu{
+            height: 100%;
+            width: 25%;
+            float: left;
+            border-right: 2px solid #fff;
+            margin-top: 33px;
+            padding-left: 15px;
+            padding-right: 8px;
+            padding-bottom: 5px;
+            .submenu-title{
+                color: #0d5632;
+                font-size: 14px;
+                padding-bottom: 15px;
+                margin: 0;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+            .element{
+                line-height: 1.5;
+            }
+            &:last-of-type{
+                margin-bottom: 0;
+                border: none;
+            }
+        }
+
+        .food_shadow {
+            clear: both;
+            float: left;
+            width: 100%;
+            height: 15px;
+            background-color: #fff5cc!important;
+            background: url(/assets/img/home-shadow01.png) center bottom no-repeat;
+        }
+    }
+    .yellow-color{
+        background-color: #e3f7d8
+    }
+    .pink-color{
+        background-color: #ffdac9
+    }
+    .green-color{
+        background-color: #c0f29d
+    }
+    
+}
