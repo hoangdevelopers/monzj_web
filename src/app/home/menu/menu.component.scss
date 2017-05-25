@@ -1,3 +1,6 @@
+$break-small: 320px;
+$break-medium: 1000px;
+$break-large: 1200px;
 .menus{
     background-color: #fff5cc;
     padding: 20px 30px;
@@ -17,6 +20,9 @@
         .menu-thumbnail{
             width: 100%;
             height: 100%;
+            @media screen and (max-width: $break-medium) {
+                display:none;
+            }
         }
         .submenu{
             height: 100%;
