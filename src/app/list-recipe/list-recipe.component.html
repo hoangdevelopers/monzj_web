@@ -1,0 +1,15 @@
+<layout>
+    <div class="breadcrumbs"><span>Trang chủ  >>  Tìm kiếm món ngon</span></div>
+    <div class="menus-filter">
+        <div class="row wrapper">
+            <div *ngFor="let menu of menus" class="col-md-4 wrapper menu {{menu.background}}"><span>{{menu.name}}</span></div>
+        </div>
+        <div *ngFor="let menu of menus; let index = index" id="menu-{{index}}" class="menu-content {{menu.background}}">
+            <span *ngFor="let submenu of menu.submenus">
+                <span *ngFor="let element of submenu.elements" class="_element">
+                    <span *ngIf="element.name!=='Khác'" class="element">{{element.name}}</span>
+                </span>
+            </span>
+        </div>
+    </div>
+</layout>

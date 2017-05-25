@@ -23,11 +23,11 @@
           <div id="navbar" class="navbar-collapse collapse primary-menu">
             <ul class="nav navbar-nav">
               <li>
-                <a [routerLink]=" ['./'] " routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="a-nav">TRANG CHỦ</a>
+                <a [routerLink]=" ['/'] " routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="a-nav">TRANG CHỦ</a>
               </li>
 
               <li>
-                <a [routerLink]=" ['/home'] " routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="a-nav">TÌM KIẾM<br/>MÓN NGON</a>
+                <a [routerLink]=" ['/recipes'] " routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="a-nav">TÌM KIẾM<br/>MÓN NGON</a>
               </li>
               <li>
                 <a [routerLink]=" ['/detail'] " routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="a-nav">THÔNG TIN<br/>HỮU ÍCH</a>
@@ -45,12 +45,28 @@
       <div class="row header-bar wrapper">
         <div class="col-lg-3 col-md-3 wrapper">
           <div class="login-header">
-            Đăng nhập
+            <span>Thành viên đăng nhập</span>
           </div>
           <div class="login-body">
-            <span>Facebook</span>
-            <br/>
-            <span>Google</span>
+            <form method="post" action="">
+              <div class="row wapper">
+                <div class="col-md-6 wapper">
+                  <input type="text" value="" placeholder="TÀI KHOẢN" id="username" name="username" class="form-control">
+                  <input type="password" value="" placeholder="MẬT KHẨU" id="password" name="password" class="form-control">
+                </div>
+                <div class="col-md-6 wapper">
+                  <div class="row wapper">
+                  <div class="col-md-6 wapper login-panel">
+                    <button id="btn-login" type="submit">ĐĂNG NHẬP</button>
+                  </div>
+                  <div class="col-md-6 wapper login-panel">
+                    <a id="btn-sigup" rel="nofollow" href="http://monngonmoingay.com/dang-ky-thanh-vien">ĐĂNG KÝ</a>
+                  </div>
+                  </div>
+                  <div class="row"><a>Quên mật khẩu</a></div>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
         <div class="col-lg-9 col-md-9 wrapper">

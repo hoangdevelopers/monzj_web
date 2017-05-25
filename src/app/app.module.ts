@@ -26,6 +26,7 @@ import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 import { AppState, InternalStateType } from './app.service';
 import { LayoutComponent } from './layout';
 import { HomeComponent, SliderComponent, MenuComponent } from './home';
+import { ListRecipeComponent } from './list-recipe';
 import { NoContentComponent } from './no-content';
 
 import '../styles/styles.scss';
@@ -54,7 +55,8 @@ type StoreType = {
     HomeComponent,
     SliderComponent,
     NoContentComponent,
-    MenuComponent
+    MenuComponent,
+    ListRecipeComponent
   ],
   /**
    * Import Angular's modules.

@@ -44,11 +44,39 @@ body {
 }
 header > .header-bar {
     .login-header {
+        font-family: 'Open Sans', sans-serif;
         background-color: #fa2200;
         padding: 10px 15px;
+        span{
+            color: #fff;
+            text-transform: uppercase; 
+        }
     }
     .login-body {
-        padding: 10px 15px;
+        font-family: 'Open Sans', sans-serif;
+        padding: 3px 0;
+        overflow: hidden;
+        background-color: #e7e7e7;
+        input{
+            height: 20px;
+            margin: 5px;
+        }
+        .login-panel{
+            font-size: 10px;
+            padding: 4px ;
+            margin: 0 ;
+            #btn-login{
+                background-color: #fa2200;
+                padding: 6px;
+                border-radius: 5px;
+                color: #fff;
+                border: 0;
+            }
+            #btn-sigup{
+                color: #fa2200;
+                font-weight: 600;
+            }
+        }
     }
     .search-box {
         background: url(/assets/img/home-search-bg.png) no-repeat;

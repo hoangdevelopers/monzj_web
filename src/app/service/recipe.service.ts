@@ -1,11 +1,13 @@
 import { Injectable } from '@angular/core'
 import { Http, Response } from '@angular/http'
 import { Observable } from 'rxjs/Observable'
+import { BehaviorSubject } from 'rxjs';
 import 'rxjs/add/operator/map'
 
 @Injectable()
 export class RecipeService {
     private apiUrl = "http://monzj-minhlv.rhcloud.com/"
+    
     constructor(private http: Http) {
     }
     GetList(): Observable<any[]> {
@@ -14,7 +16,6 @@ export class RecipeService {
             .map((res: Response) => res.json())
     }
     GetRecipeForWeek(): Observable<any[]> {
-        let recipes = []
         return this.http.get(`${this.apiUrl}Food?limit=7`)
             .map((res: Response) => res.json())
     }

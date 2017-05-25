@@ -1,10 +1,12 @@
 import {
   Component,
   OnInit,
-  NgModule
+  NgModule,
+
 } from '@angular/core';
 import { RecipeService } from '../../service'
-import {Image} from './image.interface';
+import { AppState } from '../../app.service'
+import { Image } from './image.interface';
 
 @Component({
   selector: 'slider',
@@ -14,36 +16,21 @@ import {Image} from './image.interface';
 })
 export class SliderComponent implements OnInit {
   recipes: any[]
-  total_image = 7
-  constructor(private recipeService: RecipeService) { }
+  constructor(private recipeService: RecipeService, private appState: AppState) { }
 
   public ngOnInit() {
-    
-    this.recipeService.GetRecipeForWeek().subscribe((response:any)=>{
-      var IMAGES: Image[] = response
-      this.recipes = IMAGES
-    })
+    this.appState.recipeForWeek.subscribe(res => {
+      this.recipes = res
+      this.load()
+    });
+
   }
-  slider_postion(position){
-    switch (position){
-      case "NEXT":
-        break
-      case "PREV":
-        break
-      case 2:
-        break
-      case 3:
-        break
-      case 5:
-        break
-      case 6:
-        break
-      case 7:
-        break
-      case "CN":
-        break
-      
+  load() {
+    if (this.recipes.length == 0) {
+      this.recipeService.GetRecipeForWeek().subscribe(res => {
+        this.appState.recipeForWeek.next(res)
+      });
     }
+
   }
-  
 }

@@ -1,0 +1,45 @@
+.menus-filter{
+    font-family: 'Open Sans',sans-serif;
+    .yellow-color{
+        background-color: #e3f7d8
+    }
+    .pink-color{
+        background-color: #ffdac9
+    }
+    .green-color{
+        background-color: #c0f29d
+    }
+    .menu{
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        line-height: 2.7;
+        text-align: center;
+        box-shadow: 0 3px 4px 0 #bbd1bb;
+        span{
+            font-size: 20px;
+            color: #333;
+            text-transform: uppercase;          
+        }
+    }
+    .menu-content{
+        padding: 15px 30px;
+        .element{
+            padding: 0 15px;
+            vertical-align: middle;
+            border-right: 1px solid #333;
+        }
+    }
+}
+.breadcrumbs{
+    height: 40px;
+    line-height: 10px;
+    padding-top: 10px;
+    span{
+        
+        font-size: 16px;
+        font-family: 'Open Sans',sans-serif;
+        color: #333;           
+        }
+}
