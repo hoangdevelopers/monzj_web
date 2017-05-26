@@ -7,21 +7,25 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 header{
-    .slogan{
-        padding: 20px;
-        line-height: 30px;
-        h1{
-            color: #fa2200;
-            font-size: 34px;
-            font-family: 'Dancing Script', cursive;
-            font-weight: 600;
-        }
-        h2{
-            color: #fa2200;
-            font-size: 16px;
-            font-family: 'Sriracha', cursive;
+    .logo-panel{
+        padding: 10px;
+        .slogan{
+            padding: 20px;
+            line-height: 30px;
+            h1{
+                color: #fa2200;
+                font-size: 34px;
+                font-family: 'Dancing Script', cursive;
+                font-weight: 600;
+            }
+            h2{
+                color: #fa2200;
+                font-size: 16px;
+                font-family: 'Sriracha', cursive;
+            }
         }
     }
+    
 }
 .navbar-default {
     background-color: transparent;
