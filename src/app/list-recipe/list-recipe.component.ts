@@ -16,9 +16,13 @@ import { RecipeService } from '../service'
 })
 export class ListRecipeComponent implements OnInit {
   menus:any[]
+  selected:number = 0
   constructor( private recipeService: RecipeService ) { }
 
   public ngOnInit() {
     this.menus = this.recipeService.GetMenu()
+  }
+  click_menu(index) {
+    this.selected = index;
   }
 }
